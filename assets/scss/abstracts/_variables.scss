@@ -1,0 +1,20 @@
+:root {
+	--max-width: 1200px;
+	--max-width-sm: 540px;
+
+	--mobile: 480px;
+	--tablet: 768px;
+	--laptop: 1024px;
+
+	--black: #000000;
+	--white: #ffffff;
+}
+
+$media: (
+	'mobile': var(--mobile),
+	'tablet': var(--tablet),
+	'laptop': var(--laptop),
+) !default;
+
+$grid-columns: 12;
+$grid-gap: 3rem;

@@ -1,0 +1,6 @@
+// Mixins
+@mixin media($size, $rule: max-width) {
+	@media screen and (#{$rule}: map-get($media, $size)) {
+		@content;
+	}
+}
