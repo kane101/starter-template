@@ -1,20 +1,24 @@
-
 $max-width: 1200px;
 $max-width-sm: 540px;
 
-$mobile: 480px;
+$mobile: 414px;
 $tablet: 768px;
 $laptop: 1024px;
+$desktop: 1400px;
 
 $black: #000000;
 $white: #ffffff;
 
-
 $breakpoints: (
-	'sm': $mobile,
-	'md': $tablet,
-	'lg': $laptop,
+    'mobile': $mobile,
+    'tablet': $tablet,
+    'laptop': $laptop,
+    'desktop': $desktop,
 ) !default;
 
 $grid-columns: 12;
-$grid-gap: 3rem;
+$grid-gap: 5rem;
+
+@media (max-width: map-get($breakpoints , $tablet)) {
+    $grid-gap: 3rem;
+}

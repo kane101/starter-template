@@ -1,6 +1,14 @@
 .container {
-	width: 100%;
-	max-width: $max-width;
-	margin: 0 auto;
-	padding: 0 $grid-gap;
+    width: 100%;
+    max-width: $max-width;
+    margin: 0 auto;
+    &--p {
+        padding: $grid-gap;
+    }
+    &--px {
+        padding: 0 $grid-gap;
+    }
+    &--py {
+        padding: $grid-gap 0;
+    }
 }
